@@ -1,4 +1,4 @@
-﻿using DDLC_ModManager.Properties;
+using DDLC_ModManager.Properties;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -18,10 +18,21 @@ namespace DDLC_ModManager.src
             GAME_NAME = "DokiDokiLiteratureClub",
         };
 
+        public static Game DokiDokiLiteratureClub_Plus = new Game()
+        {
+            GAME_NAME = "DokiDokiLiteratureClub_Plus",
+        };
+
         public class Game
         {
             public string GAME_NAME = "NULL";
             public string EXE_NAME = string.Empty;
+            public Int32 DIRECT_X_VER = Int32.MaxValue;
+
+            public override string ToString()
+            {
+                return GAME_NAME;
+            }
         }
     }
 }
