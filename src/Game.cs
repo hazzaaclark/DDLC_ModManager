@@ -23,11 +23,18 @@ namespace DDLC_ModManager.src
             GAME_NAME = "DokiDokiLiteratureClub_Plus",
         };
 
+        public static IEnumerable<Game> SUPPORTED_GAMES()
+        {
+            yield return DokiDokiLiteratureClub;
+            yield return DokiDokiLiteratureClub_Plus;
+        }
+
         public class Game
         {
             public string GAME_NAME = "NULL";
             public string EXE_NAME = string.Empty;
             public Int32 DIRECT_X_VER = Int32.MaxValue;
+            public string[] FOLDERS = {"raw"};
 
             public override string ToString()
             {
