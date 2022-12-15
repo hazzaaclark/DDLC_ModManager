@@ -17,7 +17,14 @@ namespace DDLC_ModManager
 
         private void FORM_LOAD(object sender, EventArgs e)
         {
-
+            var MSM = MaterialSkinManager.Instance;
+            MSM.AddFormToManage(this);
+            MSM.Theme = MaterialSkinManager.Themes.DARK;
+            MSM.ColorScheme = new ColorScheme(Primary.DeepPurple900,
+                                              Primary.DeepPurple700,
+                                              Primary.DeepPurple400,
+                                              Accent.Pink200,
+                                              TextShade.WHITE);
         }
     }
 }
