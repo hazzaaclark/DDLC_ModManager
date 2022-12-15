@@ -4,8 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DDLC_ModManager.src
+namespace DDLC_ModManager
 {
+
+    #region INIT
     static class Program
     {
         [STAThread]
@@ -17,3 +19,4 @@ namespace DDLC_ModManager.src
         }
     }
 }
+#endregion
