@@ -1,20 +1,23 @@
+using MaterialSkin;
+using MaterialSkin.Controls;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using System.Diagnostics;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
-namespace DDLC_ModManager.src
+namespace DDLC_ModManager
 {
-    public partial class MainForm : Form
+    public partial class MainForm : MaterialForm
     {
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void FORM_LOAD(object sender, EventArgs e)
+        {
+
         }
     }
 }
