@@ -10,6 +10,7 @@ namespace DDLC_ModManager
 {
     public partial class MainForm : MaterialForm
     {
+        #region FORM_DESIGN
         public MainForm()
         {
             InitializeComponent();
@@ -20,11 +21,12 @@ namespace DDLC_ModManager
             var MSM = MaterialSkinManager.Instance;
             MSM.AddFormToManage(this);
             MSM.Theme = MaterialSkinManager.Themes.DARK;
-            MSM.ColorScheme = new ColorScheme(Primary.DeepPurple900,
-                                              Primary.DeepPurple700,
-                                              Primary.DeepPurple400,
+            MSM.ColorScheme = new ColorScheme(Primary.Pink900,
+                                              Primary.Pink700,
+                                              Primary.Pink100,
                                               Accent.Pink200,
                                               TextShade.WHITE);
         }
     }
+    #endregion
 }
